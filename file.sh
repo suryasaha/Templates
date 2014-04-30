@@ -1,6 +1,6 @@
 #!/bin/bash
 # Surya Saha
-# Plant Path @Cornell / SOL Genomics
+# SOL Genomics @BTI / Plant Path @Cornell
 
 set -o nounset
 set -o errexit
