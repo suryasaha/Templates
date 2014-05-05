@@ -1,6 +1,7 @@
 #!/bin/bash
 # Surya Saha
 # Plant Path @Cornell / SOL Genomics
+# Purpose: 
 
 set -o nounset
 set -o errexit
