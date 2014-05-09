@@ -24,7 +24,7 @@ if ($opt_h) {
 }
 
 if ( !$opt_g ) {
-	print "\nTPF or AGP file and type are required. See help below\n\n\n";
+	print "\n file is required. See help below\n\n\n";
 	help();
 }
 
