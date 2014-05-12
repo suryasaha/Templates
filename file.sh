@@ -11,4 +11,14 @@ log() { # classic logger
   echo "${prefix} $@" >&2
 }
 
-WDIR = `pwd`
+WDIR=`pwd`
+
+
+
+
+
+
+
+
+log
+
