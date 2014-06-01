@@ -70,6 +70,7 @@ cmdline() {
          x)
              readonly DEBUG='-x'
              set -x
+             set -e #exits on non 0 return
              ;;
          f)
              readonly FILE=1
