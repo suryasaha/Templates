@@ -31,7 +31,7 @@ usage() {
        Run:
        $PROGNAME --file input.txt
        
-    EOF
+EOF
 }
 
 
