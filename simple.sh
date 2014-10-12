@@ -3,6 +3,8 @@
 # Surya Saha
 # Purpose:
 
+set -u #exit if uninit var
+set -e #exit if non-zero return value (error), use command || {echo 'command failed'; exit 1;}
 set -o nounset
 set -o errexit
 
