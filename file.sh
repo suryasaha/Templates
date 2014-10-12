@@ -3,6 +3,7 @@
 # SOL Genomics @BTI / Plant Path @Cornell
 # Purpose: 
 
+set -u #exit if uninit var
 set -o nounset
 set -o errexit
 # set -x #start
