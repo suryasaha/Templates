@@ -14,14 +14,12 @@ readonly ARGS="$@"
 readonly WDIR=`pwd`
 
 usage() {
-  cat << EOF
-    usage:
+    echo "usage:
     $PROGNAME <arg1> <arg2>
     
     Example:
-    $PROGNAME ARG1 ARG2
-       
-EOF
+    $PROGNAME ARG1 ARG2"
+    exit 1
 }
 
 if [ "$#" -ne 2 ]
