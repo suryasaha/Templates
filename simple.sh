@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Surya Saha
 # Purpose:
@@ -8,10 +8,10 @@ set -e #exit if non-zero return value (error), use command || {echo 'command fai
 set -o nounset
 set -o errexit
 
-readonly PROGNAME=$(basename $0)
-readonly PROGDIR=$(readlink -m $(dirname $0))
-readonly ARGS="$@"
-readonly WDIR=`pwd`
+readonly PROGNAME=$(basename "$0")
+readonly PROGDIR=$(readlink -m "$(dirname "$0")")
+readonly ARGS=( "$@" )
+readonly WDIR=$(pwd)
 
 usage() {
     echo "usage:
@@ -27,5 +27,5 @@ then
 	usage
 fi
 
-printf $1
-printf $2
+printf "%s" "$1"
+printf "%s" "$2"
