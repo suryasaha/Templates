@@ -10,10 +10,10 @@ set -o errexit
 # set -x #start
 # set +x #end
 
-readonly PROGNAME=$(basename $0)
-readonly PROGDIR=$(readlink -m $(dirname $0))
-readonly ARGS="$@"
-readonly WDIR = `pwd`
+readonly PROGNAME=$(basename "$0")
+readonly PROGDIR=$(readlink -m "$(dirname "$0")")
+readonly ARGS=("$@")
+readonly WDIR=$(pwd)
 
 usage() {
   cat <<- EOF
@@ -57,7 +57,7 @@ cmdline() {
     done
 
     #Reset the positional parameters to the short options
-    eval set -- $args
+    eval set -- "$args"
 
     while getopts "vhxf" OPTION
     do
@@ -89,14 +89,14 @@ log() { # classic logger
 }
 
 main() {
-  cmdline $ARGS
+  cmdline "$ARGS"
   
   local i
-  local files=
+  local files=$(ls ./*.txt)
   
   for i in $files
   do
-  
+    echo "$i"
   done
 }
   
