@@ -86,31 +86,3 @@ log() { # classic logger
   local prefix="[$(date +%Y/%m/%d\ %H:%M:%S)]: "
   echo "${prefix} $@" >&2
 }
-
-<<<<<<< HEAD
-WDIR=`pwd`
-
-
-
-
-
-
-
-
-log
-
-=======
-main() {
-  cmdline "$ARGS"
-  
-  local i
-  local files=$(ls ./*.txt)
-  
-  for i in $files
-  do
-    echo "$i"
-  done
-}
-  
-main
->>>>>>> 7b978902dec92f5334d579b9a5c917c90ef33d26
